@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumax Paints - Transform Your Space with Color</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <div class="logo">Dumax Paints</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="login page.html">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Paint Color.html">Colors</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#YourOrders">Order</a></li>
+          <li><a href="Visualizer.html">Visualizer</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+
+          <li>
+            <button class="cta-button" onclick="scrollToContact()">
+              <a href="About.html">About us</a>
+            </button>
+          </li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+      <div class="section-header fade-in">
+        <h2>Premium Paint Collection</h2>
+        <p>Discover our range of high-quality paints for every surface</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <img
+              src="https://pplx-res.cloudinary.com/image/upload/v1763790853/search_images/6a8ef33e8177072f38ba9cec14e9bbd129b47484.jpg"
+              alt="Interior Premium Paint"
+            />
+            <span class="product-badge">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <h3>Interior Premium Emulsion</h3>
+            <p>
+              Luxurious finish with superior stain resistance and washability.
+              Perfect for living rooms and bedrooms.
+            </p>
+            <div class="product-features">
+              <span class="feature-tag">Stain Resistant</span>
+              <span class="feature-tag">Low Odor</span>
+              <span class="feature-tag">Eco-Friendly</span>
+            </div>
+            <div class="product-price">₹3,499</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <img src="./Wood Paint.png" alt="Wood Finish Paint" />
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-info">
+            <h3>Wood Finish Paints</h3>
+            <p>
+              Wood finish paints provide a smooth finish, rich texture, and long
+              durability while enhancing the natural beauty of wooden surfaces.
+            </p>
+            <div class="product-features">
+              <span class="feature-tag">Smooth Finish </span>
+              <span class="feature-tag">Rich Texture</span>
+              <span class="feature-tag">Long Durability</span>
+            </div>
+            <div class="product-price">₹1999</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <img
+              src="https://pplx-res.cloudinary.com/image/upload/v1763790853/search_images/912edcbe40aa62bf0e0a3f73f3e0bab0a1fd1902.jpg"
+              alt="Exterior Weather Shield"
+            />
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-info">
+            <h3>Exterior Weather Shield</h3>
+            <p>
+              Advanced weather protection formula that withstands harsh
+              conditions while maintaining vibrant colors.
+            </p>
+            <div class="product-features">
+              <span class="feature-tag">UV Protection</span>
+              <span class="feature-tag">Waterproof</span>
+              <span class="feature-tag">10 Year Warranty</span>
+            </div>
+            <div class="product-price">₹4,299</div>
+          </div>
+        </div>
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <img
+              src="https://pplx-res.cloudinary.com/image/upload/v1763790853/search_images/659f23f625d9f3b4bc4bf2ff8e004ca8d146eef0.jpg"
+              alt="Designer Metallic Finish"
+            />
+            <span class="product-badge">Premium</span>
+          </div>
+          <div class="product-info">
+            <h3>Designer Metallic Finish</h3>
+            <p>
+              Create stunning accent walls with our luxury metallic paint
+              collection for a sophisticated look.
+            </p>
+            <div class="product-features">
+              <span class="feature-tag">Metallic Sheen</span>
+              <span class="feature-tag">Unique Texture</span>
+              <span class="feature-tag">Designer Collection</span>
+            </div>
+            <div class="product-price">₹5,799</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <p>Complete painting solutions for your home and business</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=400&fit=crop"
+              alt="Interior Painting"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              "
+            />
+          </div>
+          <h3>Interior Painting</h3>
+          <p>
+            Transform your interiors with our expert painting services. From
+            single rooms to entire homes, we deliver flawless finishes with
+            premium paints and professional techniques.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=400&fit=crop"
+              alt="Exterior Painting"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              "
+            />
+          </div>
+          <h3>Exterior Painting</h3>
+          <p>
+            Protect and beautify your home's exterior with weather-resistant
+            paints. Our team handles surface preparation, waterproofing, and
+            application for lasting results.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=400&h=400&fit=crop"
+              alt="Waterproofing"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              "
+            />
+          </div>
+          <h3>Waterproofing</h3>
+          <p>
+            Safeguard your property from moisture damage with our advanced
+            waterproofing solutions. Protect walls, roofs, and foundations from
+            water intrusion.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=400&h=400&fit=crop"
+              alt="Color Consultation"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              "
+            />
+          </div>
+          <h3>Color Consultation</h3>
+          <p>
+            Get expert guidance on choosing the perfect colors for your space.
+            Our color consultants help you create harmonious palettes that
+            reflect your style.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
