@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumax Paints - Transform Your Space with Color</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <div class="logo">Dumax Paints</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="login page.html">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Paint Color.html">Colors</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="#YourOrders">Order</a></li>
+          <li><a href="Visualizer.html">Visualizer</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+
+          <li>
+            <button class="cta-button" onclick="scrollToContact()">
+              <a href="About.html">About us</a>
+            </button>
+          </li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <div class="section-header fade-in">
+        <h2>About Dumax Trading Company</h2>
+        <p>Your trusted partner in premium paint solutions since 1995</p>
+      </div>
+      <div class="about-content fade-in">
+        <div>
+          <p>
+            Dumax Trading Company has been at the forefront of India's paint
+            industry for over three decades. We specialize in providing premium
+            quality paints that combine superior durability with stunning
+            aesthetics.
+          </p>
+          <p>
+            Our commitment to excellence has made us a trusted name among
+            homeowners, interior designers, and construction professionals
+            across India. With our state-of-the-art manufacturing facilities and
+            rigorous quality control, we ensure every product meets
+            international standards.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">30+</div>
+              <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2,300+</div>
+              <div class="stat-label">Color Options</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1M+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Dealer Network</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+      <div class="section-header fade-in">
+        <h2>Inspiration Gallery</h2>
+        <p>Real transformations from our satisfied customers</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/v1763790853/search_images/8a007604f11269789dc791e2e7bed85d904abe1a.jpg"
+            alt="Modern Living Room"
+          />
+          <div class="gallery-overlay">
+            <h4>Modern Living Room</h4>
+            <p>Ocean Blue & Warm Beige</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/v1763532985/search_images/fd7286e90485024a84ec3be536cdd08e919f5705.jpg"
+            alt="Elegant Bedroom"
+          />
+          <div class="gallery-overlay">
+            <h4>Elegant Bedroom</h4>
+            <p>Sage Green & Urban Gray</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/v1763790853/search_images/78063cb68c185e0dcdda256c8e2d29c901d780c4.jpg"
+            alt="Contemporary Office"
+          />
+          <div class="gallery-overlay">
+            <h4>Contemporary Office</h4>
+            <p>Deep Teal Accent Wall</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="section color-palette">
+      <div class="section-header fade-in">
+        <h2>How Can We Help You?</h2>
+        <p>Find answers to common questions and get the support you need</p>
+      </div>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+          max-width: 1000px;
+          margin: 0 auto;
+        "
+      >
+        <div class="help-card fade-in">
+          <div class="help-icon">🎨</div>
+          <h3>Color Consultation</h3>
+          <p>
+            Not sure which color suits your space? Our expert color consultants
+            are here to help you make the perfect choice.
+          </p>
+          <a href="Paint Color.html">Get Free Consultation →</a>
+        </div>
+        <div class="help-card fade-in">
+          <div class="help-icon">📱</div>
+          <h3>Customer Support</h3>
+          <p>
+            Have questions about our products or services? Our customer support
+            team is available 24/7 to assist you.
+          </p>
+          <a href="tel:+918000000000">Call +91 800-000-0000 →</a>
+        </div>
+        <div class="help-card fade-in">
+          <div class="help-icon">📍</div>
+          <h3>Find a Dealer</h3>
+          <p>
+            Locate authorized Dumax dealers near you for premium products and
+            expert painting services.
+          </p>
+          <a
+            href="https://www.google.com/maps/search/dumax+trading+company+near+me/@18.6033489,73.6190486,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMwMS4xIKXMDSoASAFQAw%3D%3D"
+            >Find Nearest Dealer →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+      <div class="section-header fade-in">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to common questions about our products and services</p>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto">
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>How much paint do I need for my room?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              One liter of Dumax paint typically covers 120-140 square feet with
+              one coat. For a standard 10x12 feet room with 10 feet ceiling, you
+              would need approximately 3-4 liters for two coats. Use our online
+              calculator or contact our support team for precise estimates.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>What is the warranty on Dumax paints?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Our Interior Premium Emulsion comes with a 5-year warranty, while
+              our Exterior Weather Shield is backed by a comprehensive 10-year
+              warranty against peeling, flaking, and fading when applied as per
+              our guidelines.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Are Dumax paints eco-friendly and safe?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes! All Dumax paints are low-VOC (Volatile Organic Compounds) and
+              meet international environmental standards. They are safe for
+              children's rooms and have minimal odor, making them ideal for
+              occupied spaces.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>How long does it take for the paint to dry?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Dumax paints are touch-dry within 30-45 minutes and ready for a
+              second coat in 4-6 hours. Full curing takes 7-10 days. Drying time
+              may vary based on weather conditions, humidity, and ventilation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Can I get a custom color mixed?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Absolutely! We offer custom color matching services at all our
+              authorized dealers. Bring in a color sample, fabric swatch, or
+              even a photo, and our advanced tinting machines can create your
+              perfect shade from over 2,300 colors.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Do you provide professional painting services?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we have a network of certified professional painters across
+              India. Contact us for a free quote, and we'll connect you with
+              experienced painters in your area who are trained in Dumax
+              application techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

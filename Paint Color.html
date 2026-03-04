@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dumax Trading Company - Transform Your Space</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:#F0F8FF;
+            margin-top: 75px;
+        }
+        nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--color-primary), #3b82f6);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.3);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--color-text);
+  transition: all 0.3s ease;
+}
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+       .screen {
+            background-color:#C9CC3F;
+            padding: 10px;
+            margin-bottom: 20px;
+            font:Cornsilk;
+       }
+        .seat-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .seat {
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+            background-color: #444;
+            cursor: pointer;
+        }
+
+        .seat:hover {
+            background-color:blue;
+        }
+        .addons {
+          margin-top: 20px;
+        }
+        .addon-item {
+            margin:20px 0;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6c7ae0;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+.aft {
+            background-color:#C9CC3F;
+            padding: 10px;
+            margin-bottom: 20px;}
+#a{
+  background-color:red;
+}
+#b{
+  background-color:FireBrick;
+}
+#c{
+  background-color:darkred;
+}
+#d{
+  background-color:lightSalmon;
+}
+#e{
+  background-color:Salmon;
+}
+#f{
+  background-color:darkSalmon;
+}
+#g{
+  background-color:Pink;
+}
+#h{
+  background-color:LightPink;
+}
+#i{
+  background-color:PaleVioletRed;
+}
+#j{
+  background-color:HotPink;
+}
+#k{
+  background-color:DeepPink;
+}
+#l{
+  background-color:MediumVioletRed;
+}
+#m{
+  background-color:orange;
+}
+#n{
+  background-color:#ffac1c;
+}
+#o{
+  background-color:Darkorange;
+}
+#p{
+  background-color:#ffaa33;
+}
+#q{
+  background-color:#ff7518;
+}
+#r{
+  background-color:#ff4433;
+}
+#s{
+  background-color:Yellow;
+}
+#t{
+  background-color:LemonChiffon;
+}
+#u{
+  background-color:PeachPuff;
+}
+#v{
+  background-color:khaki;
+}
+#w{
+  background-color:darkkhaki;
+}
+#x{
+  background-color:gold;
+}
+#y{
+  background-color:Violet;
+}
+#z{
+  background-color:Lavender;
+}
+#aa{
+  background-color:darkOrchid;
+}
+#ab{
+  background-color:orchid;
+}
+#ac{
+  background-color:Darkviolet;
+}
+#ad{
+  background-color:purple;
+}
+#ae{
+  background-color:lightGreen;
+}
+#af{
+  background-color:green;
+}
+#ag{
+  background-color:darkgreen;
+}
+#ah{
+  background-color:lawngreen;
+}
+#ai{
+  background-color:springgreen;
+}
+#aj{
+  background-color:Limegreen;
+}
+#ak{
+  background-color:lightBlue;
+}
+#al{
+  background-color:blue;
+}
+#am{
+  background-color:darkblue;
+}
+#an{
+  background-color:skyblue;
+}
+#ao{
+  background-color:cyan;
+}
+#ap{
+  background-color:navy;
+}
+#aq{
+  background-color:Brown;
+}
+#ar{
+  background-color:maroon;
+}
+#as{
+  background-color:SaddleBrown;
+}
+#at{
+  background-color:Chocolate;
+}
+#au{
+  background-color:SandyBrown;
+}
+#av{
+  background-color:rosyBrown;
+}
+#aw{
+  background-color:White;
+}
+#ax{
+  background-color:azure;
+}
+#ay{
+  background-color:SeaShell;
+}
+#az{
+  background-color:OldLace;
+}
+#ba{
+  background-color:ivory;
+}
+#bb{
+  background-color:antiquewhite;
+}
+#bc{
+  background-color:lightgrey;
+}
+#bd{
+  background-color:grey;
+}
+#be{
+  background-color:Darkgrey;
+}
+#bf{
+  background-color:Silver;
+}
+#bg{
+  background-color:SlateGray;
+}
+#bh{
+  background-color:Black;
+}
+    </style>
+</head>
+<body>
+  <header id="header">
+  <nav>
+    <div class="logo">Dumax Paints</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Paint Color.html">Colors</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="#YourOrders">Order</a></li>
+      <li><a href="Visualizer.html">Visualizer</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li>
+<button class="cta-button">
+<a href="About.html"> 
+  About us
+</a>
+</button>
+</li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+  <font size=6><h1><b><i>Dumax Trading Company</h1></i></b></font>
+    <h4><marquee scroll direction=right bgcolor="#7FFF00"><b>COLOUR YOUR WORLD WITH ASIA STAR PAINTS</b></marquee></h6>
+    <fieldset>
+      <legend align='center'></legend></legend>
+      <br><br>
+      <fieldset>
+       <label>Types of paints</label>
+      <select>
+        <option>None</option>
+        <option>Oil-based paints</option>
+        <option>Water-based paints</option>
+        <option>Acrylic paints</option>
+        <option>Enamel paints</option>
+      </select>
+</fieldset><br>
+       </fieldset>
+    <div class="container">
+<table align="center">
+<tr> 
+<td colspan="3">     
+  <div class="screen">Colours</div>
+</td>
+</tr>  
+<tr>
+<td>      
+        <div class="seat-row">
+            <div id="a" class="seat">Red</div>
+            <div id="b" class="seat">Fire Brick</div>
+            <div id="c" class="seat">Dark Red</div>
+</td>
+<td><font color=#F0F8FF>
+  tanm
+</font>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="d" class="seat">Light Salmon</div>
+            <div id="e" class="seat">Salmon</div>
+            <div id="f" class="seat">Dark Salmon</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="g" class="seat">Pink</div>
+            <div id="h" class="seat">Light Pink</div>
+            <div id="i" class="seat">Pale Violet Pink</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="j" class="seat">Hot Pink</div>
+            <div id="k" class="seat">Deep Pink</div>
+            <div id="l" class="seat">Medium Violet Pink</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="m" class="seat">Orange</div>
+            <div id="n" class="seat">Bright Orange</div>
+            <div id="o" class="seat">Dark Orange</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="p" class="seat">Yellow Orange</div>
+            <div id="q" class="seat">Pumpkin</div>
+            <div id="r" class="seat">Red Orange</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="s" class="seat">Yellow</div>
+            <div id="t" class="seat">Lemon Chiffon</div>
+            <div id="u" class="seat">Peach Puff</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="v" class="seat">Khaki</div>
+            <div id="w" class="seat">Dark Khaki</div>
+            <div id="x" class="seat">Gold</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="y" class="seat">Violet</div>
+            <div id="z" class="seat">Lavender</div>
+            <div id="aa" class="seat">Dark Orchide</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="ab" class="seat">Orchide</div>
+            <div id="ac" class="seat">Dark Violet</div>
+            <div id="ad" class="seat">Purple</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="ae" class="seat">Light Green</div>
+            <div id="af" class="seat">Green</div>
+            <div id="ag" class="seat">Dark Green</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="ah" class="seat">Lawn Green</div>
+            <div id="ai" class="seat">Spring Green</div>
+            <div id="aj" class="seat">Lime Green</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="ak" class="seat">Light Blue</div>
+            <div id="al" class="seat">Blue</div>
+            <div id="am" class="seat">Dark Blue</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="an" class="seat">Sky Blue</div>
+            <div id="ao" class="seat">Cyan</div>
+            <div id="ap" class="seat">Navy</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="aq" class="seat">Brown</div>
+            <div id="ar" class="seat">Marron</div>
+            <div id="as" class="seat">Saddle Brown</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="at" class="seat">Chocolate Brown</div>
+            <div id="au" class="seat">Sandy Brown</div>
+            <div id="av" class="seat">Rosy Brown</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="aw" class="seat">White</div>
+            <div id="ax" class="seat">White Smoke</div>
+            <div id="ay" class="seat">Sea Shell</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="az" class="seat">Ivory</div>
+            <div id="ba" class="seat">Old Lace</div>
+            <div id="bb" class="seat">Antique White</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="seat-row">
+            <div id="bc" class="seat">Light Gray</div>
+            <div id="bd" class="seat">Gray</div>
+            <div id="be" class="seat">Dark Gray</div>
+</td>
+<td>
+</td>
+<td> 
+<div class="seat-row">
+            <div id="bf" class="seat">Silver</div>
+            <div id="bg" class="seat">Slate Gray</div>
+            <div id="bh" class="seat">Black</div>           
+        </div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<div class="aft">Make your world colourful</div>
+</td>
+</tr>
+<tr>
+  <td colspan="3">
+          <div class="addons">
+            <h3>Add-ons</h3>
+            <div class="addon-item">
+                <input type="checkbox" id="Roller Brush" name="addon" value="Roller Brush">
+                <label for="Roller Brush">Roller Brush</label>
+            </div>
+            <div class="addon-item">
+                <input type="checkbox" id="Turpentine" name="addon" value="Tarpentine">
+                <label for="tarpentaine">Tarpentine</label>
+            </div>
+            <div class="addon-item">
+                <input type="checkbox" id="Sand Paper" name="addon" value="Sand Paper">
+                <label for="Sand Paper">Sand Paper</label>
+            </div>
+        </div>
+</td>
+</tr>  
+<tr>
+  <td colspan="3">        
+        <button class="submit-btn" onclick="submitSelection()">Submit</button>
+    </div>
+</td>
+</tr>
+</table>
+    <script>
+    const seats = document.querySelectorAll('.seat:not(.occupied)');
+    seats.forEach(seat => {
+        seat.addEventListener('click', () => {
+            seat.classList.toggle('selected');
+        });
+    });
+
+   function submitSelection() {
+    const selectedSeats = document.querySelectorAll('.seat.selected');
+    const addons = document.querySelectorAll('input[name="addon"]:checked');
+    const paintType = document.querySelector('select').value; // Get selected paint type
+
+    let seatNumbers = [];
+    selectedSeats.forEach(seat => {
+        seatNumbers.push(seat.innerText); // Get the seat name from innerText
+    });
+
+    let selectedAddons = [];
+    addons.forEach(addon => {
+        selectedAddons.push(addon.value);
+    });
+
+    alert(`Selected Paint Type: ${paintType}\nSelected Colours: ${seatNumbers.join(', ')}\nSelected Add-ons: ${selectedAddons.join(', ')}`);
+}
+
+</script>
+</body>
+</html>
