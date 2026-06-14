@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumax Trading Company Paints - Register</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #e6f4ff, #cce7ff, #b3dbff);
+      }
+
+      /* Card */
+      .container {
+        width: 360px;
+        background: white;
+        padding: 40px 30px;
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #1e3a5f;
+      }
+
+      /* Inputs */
+      .input-group {
+        margin-bottom: 18px;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #cce7ff;
+        border-radius: 10px;
+        outline: none;
+      }
+
+      /* Button */
+      button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(45deg, #4da6ff, #1e90ff);
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3);
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="container">
+  <h2>Create Account</h2>
+
+  <form action="DReg" method="POST" onsubmit="return validateMobile()">
+    
+  <div class="input-group">
+    <input type="text" name="uname" placeholder="Full Name" required />
+  </div>
+
+  <div class="input-group">
+    <input 
+      type="text" 
+      id="mobile"
+      name="uphone" 
+      placeholder="Mobile Number"
+      maxlength="10"
+      oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+      required 
+    />
+  </div>
+
+  <div class="input-group">
+    <input type="email" name="uemail" placeholder="Email" required />
+  </div>
+
+  <div class="input-group">
+  <input type="password" id="password" name="upassword" placeholder="Password" required />
+</div>
+
+<div class="input-group">
+  <input type="password" id="confirm" name="uconfirm" placeholder="Confirm Password" required />
+</div>
+
+  <button type="submit">Register</button>
+
+</form>
+
+  <div class="footer">
+    Already have an account? <a href="login page.html">Login</a>
+  </div>
+</div>
+
+<script>
+function validateMobile() {
+  const mobile = document.getElementById("mobile").value;
+  const password = document.getElementById("password").value;
+  const confirm = document.getElementById("confirm").value;
+
+  // Mobile validation
+  if (!/^\d{10}$/.test(mobile)) {
+    alert("Mobile number must be exactly 10 digits");
+    return false;
+  }
+
+  // Password match validation
+  if (password !== confirm) {
+    alert("Confirm Password and password must be same!");
+    return false;
+  }
+
+  return true;
+}
+</script>
+  </body>
+</html>
